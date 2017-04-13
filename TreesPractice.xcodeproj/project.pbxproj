@@ -15,6 +15,7 @@
 		03867D201E9F4815000E537D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03867D1E1E9F4815000E537D /* LaunchScreen.storyboard */; };
 		03867D2B1E9F4815000E537D /* TreesPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03867D2A1E9F4815000E537D /* TreesPracticeTests.swift */; };
 		03867D361E9F4815000E537D /* TreesPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03867D351E9F4815000E537D /* TreesPracticeUITests.swift */; };
+		03867D441E9F491F000E537D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03867D431E9F491F000E537D /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		03867D311E9F4815000E537D /* TreesPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreesPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03867D351E9F4815000E537D /* TreesPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreesPracticeUITests.swift; sourceTree = "<group>"; };
 		03867D371E9F4815000E537D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03867D431E9F491F000E537D /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				03867D1E1E9F4815000E537D /* LaunchScreen.storyboard */,
 				03867D211E9F4815000E537D /* Info.plist */,
 				03867D191E9F4815000E537D /* TreesPractice.xcdatamodeld */,
+				03867D431E9F491F000E537D /* Node.swift */,
 			);
 			path = TreesPractice;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				03867D151E9F4815000E537D /* ViewController.swift in Sources */,
 				03867D1B1E9F4815000E537D /* TreesPractice.xcdatamodeld in Sources */,
 				03867D131E9F4815000E537D /* AppDelegate.swift in Sources */,
+				03867D441E9F491F000E537D /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
