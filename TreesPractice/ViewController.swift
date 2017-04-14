@@ -17,17 +17,21 @@ class ViewController: UIViewController {
     var node2: Node!
     var node3: Node!
     var node7: Node!
+    var node9: Node!
+    var node8: Node!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        node7 = Node(data: 7, left: nil, right: nil)
-        node6 = Node(data: 6, left: nil, right: node7)
         node4 = Node(data: 4, left: nil, right: nil)
-        node1 = Node(data: 1, left: nil, right: nil)
+        node9 = Node(data: 9, left: nil, right: nil)
+        node1 = Node(data: 1, left: nil, right: node9)
+        node6 = Node(data: 6, left: nil, right: nil)
+        node8 = Node(data: 8, left: nil, right: nil)
+        node7 = Node(data: 7, left: node8, right: nil)
+        node2 = Node(data: 2, left: node6, right: node7)
         node5 = Node(data: 5, left: node1, right: node4)
-        node2 = Node(data: 2, left: node6, right: nil)
         node3 = Node(data: 3, left: node5, right: node2) //root
         
         preOrderTraverse(n: node3)
@@ -38,6 +42,8 @@ class ViewController: UIViewController {
         
         
         print("Height is " + String(getHeight(root: node3)))
+        
+        topView(n: node3)
     }
 
     func preOrderTraverse(n: Node) {
@@ -80,6 +86,33 @@ class ViewController: UIViewController {
         }
         
         return 1 + max(getHeight(root: root!.left), getHeight(root: root!.right))
+    }
+    
+    
+    func topView(n: Node)
+    {
+        leftView(n: n)
+        print(n.data)
+        rightView(n: n)
+    }
+    
+    func leftView(n:Node) {
+        if let leftNode = n.left {
+            leftView(n: leftNode)
+            print(leftNode.data)
+        }
+    }
+    
+    func rightView(n:Node) {
+        if let rightNode = n.right {
+            print(rightNode.data)
+            rightView(n: rightNode)
+        }
+    }
+    
+    
+    func levelOrderTraverse(n: Node) {
+        
     }
 }
 
